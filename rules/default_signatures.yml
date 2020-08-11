@@ -650,13 +650,6 @@ SafeFunctionSignatures:
         match-level: 3
     -
         part: PartContent
-        match: '(?i)\@SecretService\/'
-        description: 'not a password'
-        ruleid: '90063b41db8e49f39012d2402a4e1829'
-        enable: 1
-        match-level: 3
-    -
-        part: PartContent
         match: '(?i)System\.console\('
         description: 'not a password'
         ruleid: '25f53e5895234839a5104fa40634f530'
@@ -797,20 +790,6 @@ SafeFunctionSignatures:
         match-level: 3
     -
         part: PartContent
-        match: '(?i)\bnull\b'
-        description: 'not a password'
-        ruleid: '207e2bc2d1cd45838f2f7f1e29093060'
-        enable: 1
-        match-level: 3
-    -
-        part: PartContent
-        match: '(?i)\bargs\['
-        description: 'not a password'
-        ruleid: '416e296cb39046e7b490c2acb84ad88e'
-        enable: 1
-        match-level: 3
-    -
-        part: PartContent
         match: '(?i)readboolean\(\)'
         description: 'not a password'
         ruleid: 'a73eb63df821430a8d43ecf8a19f2548'
@@ -902,23 +881,9 @@ SafeFunctionSignatures:
         match-level: 3
     -
         part: PartContent
-        match: '(?i)\bssapi\.get_secret'
-        description: 'not a password'
-        ruleid: '0e09a9a727f24f0aaaed395bafd99f49'
-        enable: 1
-        match-level: 3
-    -
-        part: PartContent
         match: '(?i)properties\.get\('
         description: 'not a password'
         ruleid: '08f7c78fd2434b0dab1d3fdeabe5b2e5'
-        enable: 1
-        match-level: 3
-    -
-        part: PartContent
-        match: '(?i)\bprocess\.env\.'
-        description: 'not a password'
-        ruleid: '3fa62978656744baa32e6d9eec7a1a60'
         enable: 1
         match-level: 3
     -
