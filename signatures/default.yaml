@@ -187,6 +187,14 @@ PatternSignatures:
         confidence-level: 3
     -
         part: PartContent
+        match: '(?i)(\bLTAI[0-9A-Z]{20}\b)'
+        description: 'Contains Alicloud Access Key ID'
+        signatureid: 'a79e43d6858eb2f0b25ab660f7886237'
+        enable: 1
+        entropy: 3.5
+        confidence-level: 3
+    -
+        part: PartContent
         match: '(?msi)(-----BEGIN PRIVATE KEY-----).*?-----END PRIVATE KEY-----'
         description: 'Contains generic private key'
         signatureid: '27923b024277454299e2d489dfd21ed9'
